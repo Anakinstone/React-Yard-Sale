@@ -1,14 +1,20 @@
 import React from 'react';
 import '@styles/Login.scss';
-
 import logo from '@logos/logo_yard_sale.svg';
+
+const handleSubmit = () => {
+    const formData = new FormData(form.current);
+    const data = {
+        username: formData.get('')
+    }
+}
 
 const Login = () => {
 	return (
 		<div className="Login">
 			<div className="Login-container">
 				<img src={logo} alt="logo" className="logo-login" />
-				<form action="/" className="form">
+				<form action="/" className="form" ref={logo}>
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" id="email" placeholder="mail@example.com" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
