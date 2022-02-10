@@ -56,7 +56,7 @@ const Header = () => {
 				</ul>
 			</div>
 			{toggle && <Menu /> }
-			{toggleOrders && <MyOrder />}
+			{toggleOrders && <MyOrder closeModal={toggleOrders => setToggleOrders(toggleOrders)} />}
 		</nav>
 	);
 }
