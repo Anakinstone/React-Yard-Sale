@@ -22,7 +22,8 @@ const MyOrder = (props) => {
 				{state.cart.map((product, index) => (
 					<OrderItem product={product} key={index} index={index} />
 				))}
-				<div className="order">
+			</div>
+			<div className="order">
 					<p>
 						<span>Total</span>
 					</p>
@@ -31,7 +32,6 @@ const MyOrder = (props) => {
 				<button className="primary-button">
 					Checkout
 				</button>
-			</div>
 		</aside>
 	);
 }
